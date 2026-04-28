@@ -1,0 +1,26 @@
+/* App.css - Minimal reset */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--background);
+  font-family: "Switzer", sans-serif; /* Optional: set default font */
+}
+
+main {
+  width: 100%;
+}

@@ -1,0 +1,119 @@
+.author {
+  background-color: #0e0e0e;
+  width: 100%;
+  padding: 8rem 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 5rem;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 560px;
+  }
+}
+
+/* ── LEFT — photo ── */
+.photoWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+
+  @media (max-width: 900px) {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+.photo {
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+/* ── RIGHT — content ── */
+.right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--highlight-gold, #c5a059);
+  margin-bottom: 1.25rem;
+}
+
+.headline {
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 3.5vw, 3.25rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.1;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 2.5rem;
+
+  p {
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+  }
+}
+
+/* ── Stats ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  // vertical divider between stats
+  & + & {
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    padding-left: 1.25rem;
+  }
+}
+
+.statValue {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-style: italic;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}

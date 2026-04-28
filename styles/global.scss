@@ -1,0 +1,17 @@
+:root {
+  /* Light Theme Colors */
+  --bg-primary: #faf8f5; /* Warm Alabaster */
+  --bg-secondary: #efece6; /* Slightly darker cream for sections */
+  --bg-card: #ffffff; /* Pure white for cards */
+
+  --text-primary: #1a1a1a; /* Soft Charcoal */
+  --text-secondary: #4a4a4a; /* Medium Gray */
+
+  --accent-primary: #722f37; /* Deep Merlot (CTAs) */
+  --accent-hover: #8a3b46; /* Lighter Merlot */
+
+  --highlight-gold: #c5a059; /* Muted Gold for accents */
+
+  --font-heading: var(--font-newsreader);
+  --font-body: var(--font-inter);
+}

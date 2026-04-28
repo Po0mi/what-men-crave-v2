@@ -1,0 +1,221 @@
+.section {
+  background-color: #0e0e0e;
+  width: 100%;
+  padding: 8rem 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 6rem;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+/* ── LEFT ── */
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.headline {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.optionLabel {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.optionA {
+  .optionLabel {
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.optionAText {
+  font-family: var(--font-heading);
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+}
+
+.orDivider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.orLine {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.orWord {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.optionB {
+  .optionLabel {
+    color: var(--highlight-gold, #c5a059);
+  }
+}
+
+.optionBText {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.75vw, 2.25rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #ffffff;
+  margin: 0;
+}
+
+.quote {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* ── RIGHT — sticky card ── */
+.right {
+  position: sticky;
+  top: 6rem;
+
+  @media (max-width: 900px) {
+    position: static;
+  }
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* ── Badge ── */
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.badgeNumber {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--highlight-gold, #c5a059);
+  line-height: 1;
+}
+
+.badgeSub {
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.cardRule {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  margin: 0;
+}
+
+.cardGuarantee {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+.productLine {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.productMeta {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.cta {
+  display: block;
+  width: 100%;
+  background-color: var(--accent-primary, #722f37);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1.125rem 1.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+
+  &:hover {
+    background-color: var(--accent-hover, #8a3b46);
+    transform: translateY(-2px);
+  }
+}
+
+.trust {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.06em;
+}

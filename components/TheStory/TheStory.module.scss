@@ -1,0 +1,115 @@
+.story {
+  background-color: var(--bg-primary, #f9f7f2);
+  width: 100%;
+  padding: 7rem 0 5rem;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── Section label ── */
+.sectionLabel {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--highlight-gold, #c5a059);
+  margin-bottom: 3rem;
+}
+
+/* ── Two-column grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  gap: 5rem;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* ── Left column ── */
+.left {
+  position: sticky;
+  top: 6rem;
+
+  @media (max-width: 768px) {
+    position: static;
+  }
+}
+
+.headline {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--text-primary, #1a1a1a);
+  margin: 0;
+
+  em {
+    font-style: italic;
+    color: var(--accent-primary, #722f37);
+  }
+}
+
+/* ── Right column ── */
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-secondary, #4a4a4a);
+    margin: 0;
+  }
+}
+
+.lead {
+  font-size: 1.125rem !important;
+  color: var(--text-primary, #1a1a1a) !important;
+  font-style: italic;
+}
+
+.callout {
+  font-family: var(--font-heading) !important;
+  font-size: 1.375rem !important;
+  font-weight: 500 !important;
+  font-style: italic;
+  color: var(--text-primary, #1a1a1a) !important;
+  line-height: 1.4 !important;
+}
+
+.blockquote {
+  margin: 0.5rem 0;
+  padding: 1.5rem 1.75rem;
+  border-left: 3px solid var(--highlight-gold, #c5a059);
+  background-color: rgba(197, 160, 89, 0.06);
+
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-primary, #1a1a1a);
+
+  strong em {
+    color: var(--accent-primary, #722f37);
+    font-style: italic;
+  }
+}
+
+.resolution {
+  font-family: var(--font-heading) !important;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  color: var(--text-primary, #1a1a1a) !important;
+}

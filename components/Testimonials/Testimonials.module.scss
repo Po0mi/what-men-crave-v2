@@ -1,0 +1,106 @@
+.section {
+  background-color: var(--bg-primary, #f9f7f2);
+  width: 100%;
+  padding: 8rem 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--highlight-gold, #c5a059);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/* ── Featured ── */
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.featuredQuote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.75vw, 2.25rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--text-primary, #1a1a1a);
+  margin: 0;
+}
+
+.featuredName {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+/* ── Secondary grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: var(--bg-primary, #f9f7f2);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cardQuote {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text-secondary, #4a4a4a);
+  margin: 0;
+}
+
+.cardName {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.25);
+  margin-top: auto;
+}
+
+/* ── Stars ── */
+.stars {
+  font-size: 0.75rem;
+  color: var(--highlight-gold, #c5a059);
+  letter-spacing: 0.15em;
+}

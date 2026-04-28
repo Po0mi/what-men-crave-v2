@@ -1,0 +1,291 @@
+.section {
+  background-color: var(--bg-secondary, #efece6);
+  width: 100%;
+}
+
+/* ── Header ─ */
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  // Responsive Padding: Less top/bottom on mobile
+  padding: 4rem 1.5rem 2rem;
+
+  @media (min-width: 768px) {
+    padding: 8rem 2rem 4rem;
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--highlight-gold, #c5a059);
+  margin-bottom: 1rem;
+}
+
+.headline {
+  font-family: var(--font-heading);
+  // Scales from 2rem on mobile to 3.5rem on desktop
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.1;
+  color: var(--text-primary, #1a1a1a);
+  margin: 0 0 1.25rem 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.intro {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary, #4a4a4a);
+  margin: 0;
+  max-width: 1200px;
+
+  strong {
+    color: var(--text-primary, #1a1a1a);
+    font-weight: 600;
+  }
+}
+
+/* ── Bonus list ── */
+.listWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem 2rem 4rem;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  // Desktop: 3 Columns (Meta | Body | Value)
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  /* Mobile: Stack Layout */
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr; // Single column
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+  }
+}
+
+.itemMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 0.2rem;
+
+  /* Mobile: Row layout for label/duration */
+  @media (max-width: 600px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.itemLabel {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--highlight-gold, #c5a059);
+}
+
+.itemDuration {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.itemBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  /* Mobile: Takes full width */
+  @media (max-width: 600px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.itemTitle {
+  font-family: var(--font-heading);
+  font-size: 1.125rem; // Slightly larger for readability
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--text-primary, #1a1a1a);
+  margin: 0;
+}
+
+.itemDesc {
+  font-family: var(--font-body);
+  font-size: 0.9rem; // Slightly larger on mobile
+  line-height: 1.6;
+  color: var(--text-secondary, #4a4a4a);
+  margin: 0;
+}
+
+.itemValue {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.3);
+  padding-top: 0.2rem;
+  white-space: nowrap;
+  text-align: right;
+
+  /* Mobile: Align left or center as needed, usually left is fine in stack */
+  @media (max-width: 600px) {
+    text-align: left;
+    margin-top: 0.5rem;
+    color: rgba(0, 0, 0, 0.5); // Make it slightly more visible
+  }
+}
+
+/* ── Price card ── */
+.priceBar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+
+  @media (min-width: 768px) {
+    padding: 0 2rem 8rem;
+  }
+}
+
+.priceBarInner {
+  background-color: #0e0e0e;
+  padding: 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr; // Mobile: Single Column
+  gap: 2rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr; // Desktop: Two Columns
+    gap: 3rem;
+    padding: 3rem;
+  }
+}
+
+.priceBreakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  /* Desktop Border */
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 3rem;
+
+  /* Mobile Border Adjustment */
+  @media (max-width: 640px) {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.04em;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.priceToday {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.5rem;
+}
+
+.bigPrice {
+  font-family: var(--font-heading);
+  font-size: 2.5rem; // Smaller on mobile
+  font-style: italic;
+  font-weight: 400;
+  color: var(--highlight-gold, #c5a059);
+  line-height: 1;
+  text-align: center;
+
+  @media (min-width: 640px) {
+    font-size: 3rem;
+    text-align: right; // Align right on desktop if desired
+  }
+}
+
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--accent-primary, #722f37);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem; // Slightly larger tap target
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+
+  width: 100%; // Full width button on mobile
+  max-width: 320px;
+
+  &:hover {
+    background-color: var(--accent-hover, #8a3b46);
+    transform: translateY(-2px);
+  }
+
+  @media (min-width: 640px) {
+    width: auto; // Auto width on desktop
+  }
+}
+
+.guarantee {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.04em;
+}
