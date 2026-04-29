@@ -44,7 +44,8 @@ const ClosingCta = () => {
           <div className={styles.card}>
             <div className={styles.badge}>
               <span className={styles.badgeNumber}>60</span>
-              <span className={styles.badgeSub}>Day Money-Back Guarantee</span>
+              <span className={styles.badgeDay}>Day</span>
+              <span className={styles.badgeSub}>Money-Back<br />Guarantee</span>
             </div>
 
             <hr className={styles.cardRule} />
