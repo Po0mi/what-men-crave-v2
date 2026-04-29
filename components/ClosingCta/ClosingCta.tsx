@@ -29,7 +29,7 @@ const ClosingCta = () => {
           <div className={styles.optionB}>
             <span className={styles.optionLabel}>Option B</span>
             <p className={styles.optionBText}>
-              Get the map. Let him feel truly, deeply wanted.
+              Read this tonight. Try one thing. Watch what happens to him.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ const ClosingCta = () => {
             </p>
 
             <a href="#checkout" className={styles.cta}>
-              Get Instant Access Now — $37
+              YES, I'M READY — INSTANT ACCESS · $37
             </a>
 
             <span className={styles.trust}>

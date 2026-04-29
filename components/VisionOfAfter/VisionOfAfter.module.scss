@@ -1,0 +1,64 @@
+.section {
+  background-color: var(--bg-primary, #f9f7f2);
+  width: 100%;
+  padding: 5rem 0 4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.kicker {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--highlight-gold, #c5a059);
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.1;
+  color: var(--text-primary, #1a1a1a);
+  margin: 0 0 2rem 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+
+  p {
+    font-family: var(--font-heading);
+    font-size: 1.0625rem;
+    font-style: italic;
+    line-height: 1.8;
+    color: var(--text-secondary, #4a4a4a);
+    margin: 0;
+  }
+}
+
+.pullQuote {
+  font-family: var(--font-heading);
+  font-size: 1.1875rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--accent-primary, #722f37);
+  margin: 0;
+}

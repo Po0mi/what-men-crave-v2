@@ -30,22 +30,33 @@ const AuthorBio = () => {
 
         {/* ── RIGHT — content ── */}
         <div className={styles.right}>
-          <span className={styles.eyebrow} ref={eyebrowRef}>Why Listen to Mat?</span>
+          <span className={styles.eyebrow} ref={eyebrowRef}>
+            Why Listen to Mat?
+          </span>
 
-          <h2 className={styles.headline} ref={headlineRef}>Hi, I'm Mat&nbsp;Shaffer.</h2>
+          <h2 className={styles.headline} ref={headlineRef}>
+            Hi, I'm Mat&nbsp;Shaffer.
+          </h2>
 
           <div className={styles.body} ref={bodyRef}>
             <p>
-              I'm not just a relationship coach. I'm a former attorney who left
-              the courtroom to decode the masculine mind.
+              I'm not just another relationship coach. I'm a former attorney who
+              spent years getting people to tell me the truth they were hiding.
             </p>
             <p>
-              I don't deal in fluff. I deal in the raw, honest truths men rarely
-              share, because I've heard them directly from the source.
+              Now I do the same thing for women, except the truth I'm decoding
+              is what your man can't bring himself to say out loud. The thing he
+              wants. The thing he wishes you knew. The thing he's afraid to ask
+              for.
             </p>
             <p>
-              This isn't theory. This is insider access to what men actually
-              think, feel, and crave in the bedroom.
+              I've coached over 100,000 women. I've had honest, unfiltered
+              conversations about sex and intimacy that 99% of men will never
+              have. This isn't theory.
+            </p>
+            <p>
+              This is insider access to what men actually think, feel, and crave
+              in the bedroom.
             </p>
           </div>
 
