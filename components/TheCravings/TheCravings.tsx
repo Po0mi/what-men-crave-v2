@@ -50,15 +50,25 @@ const TheCravings = () => {
       <div className={styles.inner}>
         {/* ── LEFT — sticky anchor ── */}
         <div className={styles.left}>
-          <span className={styles.eyebrow} ref={eyebrowRef}>The Framework</span>
-          <h2 className={styles.headline} ref={headlineRef}>The 7 Unspoken Cravings</h2>
+          <span className={styles.eyebrow} ref={eyebrowRef}>
+            The Framework
+          </span>
+          <h2 className={styles.headline} ref={headlineRef}>
+            The 7 Unspoken Cravings
+          </h2>
           <p className={styles.intro} ref={introRef}>
             You don't need more "techniques." You need a map. Inside{" "}
             <em>What Men Crave (But Will Never Ask For)</em>, I reveal the
             specific emotional and energetic shifts that transform intimacy from
             a routine into a sanctuary.
           </p>
-          <a href="#value-stack" className={styles.cta} ref={ctaRef}>
+          <a
+            href="https://matshaffer.samcart.com/products/what-a-man-craves"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.cta}
+            ref={ctaRef}
+          >
             Show Me the 7 Cravings - $37
           </a>
         </div>

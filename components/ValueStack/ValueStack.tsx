@@ -45,7 +45,6 @@ const ValueStack = () => {
   return (
     <section className={styles.section} id="value-stack">
       <div className={styles.inner}>
-
         {/* ── LEFT — sticky anchor ── */}
         <div className={styles.left}>
           <span className={styles.eyebrow} ref={eyebrowRef}>
@@ -55,8 +54,8 @@ const ValueStack = () => {
             It&rsquo;s Not Just a PDF.
           </h2>
           <p className={styles.intro} ref={introRef}>
-            When you grab the guide today, you&rsquo;re not just getting a
-            book. You&rsquo;re getting <strong>The Vault</strong>&mdash;including{" "}
+            When you grab the guide today, you&rsquo;re not just getting a book.
+            You&rsquo;re getting <strong>The Vault</strong>&mdash;including{" "}
             <strong>9+ Hours of Live Workshop Recordings</strong> where I go
             deeper, answer real questions, and coach women live.
           </p>
@@ -78,7 +77,12 @@ const ValueStack = () => {
               </div>
             </div>
 
-            <a href="#checkout" className={styles.cta}>
+            <a
+              href="https://matshaffer.samcart.com/products/what-a-man-craves"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.cta}
+            >
               Get Instant Access &mdash; $37
             </a>
             <span className={styles.guarantee}>
@@ -108,7 +112,6 @@ const ValueStack = () => {
             </li>
           ))}
         </ul>
-
       </div>
     </section>
   );

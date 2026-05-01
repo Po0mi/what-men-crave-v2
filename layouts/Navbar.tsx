@@ -21,7 +21,12 @@ const Navbar = () => {
         </div>
 
         {/* RIGHT — CTA */}
-        <a href="#value-stack" className="funnel-nav-cta">
+        <a
+          href="https://matshaffer.samcart.com/products/what-a-man-craves"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="funnel-nav-cta"
+        >
           Get Access - $37
         </a>
       </div>

@@ -45,7 +45,11 @@ const ClosingCta = () => {
             <div className={styles.badge}>
               <span className={styles.badgeNumber}>60</span>
               <span className={styles.badgeDay}>Day</span>
-              <span className={styles.badgeSub}>Money-Back<br />Guarantee</span>
+              <span className={styles.badgeSub}>
+                Money-Back
+                <br />
+                Guarantee
+              </span>
             </div>
 
             <hr className={styles.cardRule} />
@@ -63,7 +67,12 @@ const ClosingCta = () => {
               <span className={styles.productMeta}>9+ Hours of Workshops</span>
             </p>
 
-            <a href="#checkout" className={styles.cta}>
+            <a
+              href="https://matshaffer.samcart.com/products/what-a-man-craves"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.cta}
+            >
               YES, I'M READY — INSTANT ACCESS · $37
             </a>
 

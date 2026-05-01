@@ -41,7 +41,12 @@ const Hero = () => {
         </p>
 
         <div className="hero-cta">
-          <a href="#value-stack" className="primary-cta">
+          <a
+            href="https://matshaffer.samcart.com/products/what-a-man-craves"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="primary-cta"
+          >
             Get Instant Access - $37
           </a>
 
