@@ -9,33 +9,42 @@ type Testimonial = {
   initials: string;
   location?: string;
   status?: string;
+  image?: string;
 };
 
 const featured: Testimonial = {
   quote:
-    "I finally understood why my husband shut down after sex. The 'After' chapter literally fixed our marriage. We're closer now than we've been in ten years.",
-  name: "Sarah Mitchell",
-  initials: "SM",
-  location: "Austin, TX",
-  status: "Married 14 years",
+    "No matter who you are, if you need help understanding your connections with men, this will help you. You'll get so much out of it",
+  name: "Nicole L.",
+  initials: "NL",
+  location: "PORTLAND, OG",
+  image: "/images/Nicole.webp",
 };
 
 const secondary: Testimonial[] = [
   {
     quote:
-      "I used to think I had to be 'good at sex.' Mat taught me I just had to be present. The shift in my partner's energy was immediate. He's more affectionate, more open, and more connected.",
-    name: "Emily Russo",
-    initials: "ER",
-    location: "Chicago, IL",
-    status: "Dating 2 years",
+      "I've done a lot of work on myself over the years. What surprised me about this is how fast it clicked — so many breakthrough moments in such a short space of time.",
+    name: "Liz R.",
+    initials: "LR",
+    location: "Wales, UK",
+    image: "/images/Liz.webp",
   },
   {
     quote:
-      "The Vault workshops are worth 10x the price. Hearing Mat coach other women helped me realize I wasn't broken — I was just missing the map.",
-    name: "Jessica Torres",
-    initials: "JT",
-    location: "Nashville, TN",
-    status: "Married 7 years",
+      "Mat has taken everything I've read in the past ten years of being single and put it in one place. It finally makes sense",
+    name: "Lisa M.",
+    initials: "LM",
+    location: "Las Vegas, NV",
+    image: "/images/Lisa.webp",
+  },
+  {
+    quote:
+      "It's been profound — the difference this has made in my attitude, my confidence, the way I show up in relationships. I'm so thankful.",
+    name: "Mikel T.",
+    initials: "MT",
+    location: "Washington, DC",
+    image: "/images/mikel-t.webp",
   },
 ];
 
@@ -45,11 +54,28 @@ const Stars = () => (
   </span>
 );
 
-const Avatar = ({ initials }: { initials: string }) => (
-  <div className={styles.avatar} aria-hidden="true">
-    {initials}
-  </div>
-);
+const Avatar = ({
+  initials,
+  image,
+  name,
+}: {
+  initials: string;
+  image?: string;
+  name: string;
+}) => {
+  if (image) {
+    return (
+      <div className={styles.photoWrapper}>
+        <img src={image} alt={`Portrait of ${name}`} className={styles.photo} />
+      </div>
+    );
+  }
+  return (
+    <div className={styles.avatar} aria-hidden="true">
+      {initials}
+    </div>
+  );
+};
 
 const Attribution = ({
   name,
@@ -80,7 +106,11 @@ const Testimonials = () => {
 
         {/* ── Featured quote ── */}
         <div className={styles.featured}>
-          <Avatar initials={featured.initials} />
+          <Avatar
+            initials={featured.initials}
+            image={featured.image}
+            name={featured.name}
+          />
           <Stars />
           <blockquote className={styles.featuredQuote}>
             "{featured.quote}"
@@ -97,14 +127,16 @@ const Testimonials = () => {
 
         {/* ── Secondary quotes ── */}
         <div className={styles.grid}>
-          {secondary.map(({ quote, name, initials, location, status }) => (
-            <div key={name} className={styles.card}>
-              <Avatar initials={initials} />
-              <Stars />
-              <blockquote className={styles.cardQuote}>"{quote}"</blockquote>
-              <Attribution name={name} location={location} status={status} />
-            </div>
-          ))}
+          {secondary.map(
+            ({ quote, name, initials, location, status, image }) => (
+              <div key={name} className={styles.card}>
+                <Avatar initials={initials} image={image} name={name} />
+                <Stars />
+                <blockquote className={styles.cardQuote}>"{quote}"</blockquote>
+                <Attribution name={name} location={location} status={status} />
+              </div>
+            ),
+          )}
         </div>
       </div>
     </section>
