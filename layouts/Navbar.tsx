@@ -4,10 +4,8 @@ const Navbar = () => {
   return (
     <nav className="funnel-nav">
       <div className="funnel-nav-container">
-        {/* LEFT — message */}
-        <span className="funnel-nav-message">
-          Introductory pricing - limited time only
-        </span>
+        {/* LEFT — spacer to keep center truly centered */}
+        <div className="funnel-nav-spacer" aria-hidden="true" />
 
         {/* CENTER — price anchor */}
         <div className="funnel-nav-price-anchor">

@@ -14,7 +14,7 @@ type Testimonial = {
 
 const featured: Testimonial = {
   quote:
-    "No matter who you are, if you need help understanding your connections with men, this will help you. You'll get so much out of it",
+    "No matter who you are, if you need help understanding your connections with men, this will help you. You'll get so much out of it.",
   name: "Nicole L.",
   initials: "NL",
   location: "PORTLAND, OR",
@@ -32,7 +32,7 @@ const secondary: Testimonial[] = [
   },
   {
     quote:
-      "Mat has taken everything I've read in the past ten years of being single and put it in one place. It finally makes sense",
+      "Mat has taken everything I've read in the past ten years of being single and put it in one place. It finally makes sense.",
     name: "Lisa M.",
     initials: "LM",
     location: "Las Vegas, NV",
