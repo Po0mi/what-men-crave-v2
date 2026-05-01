@@ -17,7 +17,7 @@ const featured: Testimonial = {
     "No matter who you are, if you need help understanding your connections with men, this will help you. You'll get so much out of it",
   name: "Nicole L.",
   initials: "NL",
-  location: "PORTLAND, OG",
+  location: "PORTLAND, OR",
   image: "/images/Nicole.webp",
 };
 
