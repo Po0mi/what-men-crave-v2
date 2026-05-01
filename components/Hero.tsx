@@ -14,7 +14,7 @@ const Hero = () => {
         The 'fill' prop makes it stretch to fill the parent (.hero).
       */}
       <Image
-        src="/images/hero-intimate.jpg"
+        src="/images/hero-intimate.webp"
         alt="Intimate couple connection representing deep emotional bond"
         fill
         priority
