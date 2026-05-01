@@ -3,18 +3,6 @@
   background-color: #0f0e0d;
   width: 100%;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-      ellipse 60% 40% at 15% 50%,
-      rgba(197, 160, 89, 0.04) 0%,
-      transparent 65%
-    );
-    pointer-events: none;
-  }
 }
 
 /* ── Two-column grid ── */
