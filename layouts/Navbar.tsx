@@ -25,7 +25,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className="funnel-nav-cta"
         >
-          Get Access - $37
+          Get Access
         </a>
       </div>
     </nav>
